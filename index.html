@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afstandscalculator Airco Buitenunit</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="page-header">
+        <img src="foto's/Logo-Klimaatshop.nl-Kleur-Wit-Achtergrond-Transparant-Breed-440x200-px-Nieuw2024-PNG.png" alt="Logo Klimaatshop" class="header-logo" />
+    </header>
+
+  <div id="calculator">
+    <h2>📏Hoe ver moet je airco van de erfgrens staan om binnen de geluidsnorm te blijven?</h2>
+
+    <label for="merk">1. Wat is het merk van je airco?</label>
+    <select id="merk" onchange="toonModellen()">
+      <option value="">-- Kies merk --</option>
+      <option value="mhi">Mitsubishi Heavy Industries</option>
+      <option value="daikin">Daikin</option>
+      <option value="sinclair">Sinclair</option>
+      <option value="overig">Overig</option>
+    </select>
+
+    <div id="modelContainer" style="display:none;">
+      <label for="model">2a. Kies je model buitenunit</label>
+      <select id="model" onchange="toonNachtOptie()"></select>
+        <div id="nachtContainer" style="display: none; margin-top: 1em;">
+            <label for="nachtmodus" class="nacht-label">
+                <input type="checkbox" id="nachtmodus" onchange="toonNachtOptie()" class="nacht-checkbox" />
+            Gebruik nachtmodus (indien beschikbaar)
+            </label>
+        </div>
+    </div>
+
+    <div id="customDbContainer" style="display:none;">
+      <label for="customDb">2b. Voer de geluidsdruk in (dB)</label>
+      <input type="number" id="customDb" placeholder="Bijv. 60" />
+    </div>
+
+    <label for="plaatsing">3. Waar wordt de buitenunit geplaatst?</label>
+    <select id="plaatsing">
+      <option value="0">Vrijstaand</option>
+      <option value="3">Tegen een muur (+3 dB)</option>
+      <option value="6">In een hoek of nis (+6 dB)</option>
+    </select>
+
+    <label for="gebruik">4. Wanneer gebruik je de airco meestal?</label>
+    <select id="gebruik">
+      <option value="45">Voornamelijk overdag (max 45 dB)</option>
+      <option value="40">Voornamelijk 's avonds/'s nachts (max 40 dB)</option>
+      <option value="40">Zowel overdag als 's nachts (max 40 dB)</option>
+    </select>
+
+    <button onclick="berekenAfstand()">Bereken minimale afstand</button>
+
+    <h3>📊 Resultaat:</h3>
+    <p id="resultaat">Vul de gegevens in en klik op 'Bereken'.</p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

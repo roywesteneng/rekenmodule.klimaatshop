@@ -1,0 +1,65 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f6f9fc;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  background-color: #000290;
+  padding: 1em 2em;
+  text-align: center;
+}
+
+.header-logo {
+  height: 50px;
+  width: auto;
+}
+
+.calculator-title {
+  text-align: center;
+  font-size: 1.4em;
+  margin: 1.5em auto 1em;
+  padding: 0 1em;
+  max-width: 800px;
+  font-weight: 500;
+}
+
+#calculator {
+  max-width: 700px;
+  margin: 2em auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+label, select, input, button {
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+}
+input, select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+button {
+  margin-top: 2em;
+  padding: 12px;
+  background-color: #000290;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.nacht-label {
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.nacht-checkbox {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+

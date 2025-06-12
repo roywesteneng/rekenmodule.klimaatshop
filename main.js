@@ -1,75 +1,75 @@
 const modellen = {
   mhi: {
-    "MHI SRC20ZS-W – [2,0 kW] (voor binnenunit: SRK20ZS-W)": [45, 42],
-    "MHI SRC25ZS-W – [2,5 kW] (voor binnenunit: SRK25ZS-W)": [46, 42],
-    "MHI SRC35ZS-W – [3,5 kW] (voor binnenunit: SRK35ZS-W)": [50, 45],
-    "MHI SRC50ZS-W – [5,0 kW] (voor binnenunit: SRK50ZS-W)": [52, 45],
-    "MHI SRC20ZSX-W – [2,0 kW] (voor binnenunit: SRK20ZSX-W)": [45, 42],
-    "MHI SRC25ZSX-W – [2,5 kW] (voor binnenunit: SRK25ZSX-W)": [44, 35],
-    "MHI SRC35ZSX-W – [3,5 kW] (voor binnenunit: SRK35ZSX-W)": [48, 38],
-    "MHI SRC50ZSX-W – [5,0 kW] (voor binnenunit: SRK50ZSX-W)": [51, 42],
-    "MHI SRC60ZSX-W – [6,0 kW] (voor binnenunit: SRK60ZSX-W)": [52, 42],
-    "MHI SRC63ZR-W – [6,3 kW] (voor binnenunit: SRK63ZR-W)": [54, 45],
-    "MHI SRC71ZR-W – [7,1 kW] (voor binnenunit: SRK71ZR-W)": [44, 35],
-    "MHI SRC80ZR-W – [8,0 kW] (voor binnenunit: SRK80ZR-W)": [56, 47],
-    "MHI SCM40ZS-W – [4,0 kW] (multisplit buitenunit)": [49, 44],
-    "MHI SCM45ZS-W – [4,5 kW] (multisplit buitenunit)": [50, 44],
-    "MHI SCM50ZS-W – [5,0 kW] (multisplit buitenunit)": [49, 43],
-    "MHI SCM60ZS-W – [6,0 kW] (multisplit buitenunit)": [50, 43],
-    "MHI SCM71ZS-W – [7,1 kW] (multisplit buitenunit)": [50, 45],
-    "MHI SCM80ZS-W – [8,0 kW] (multisplit buitenunit)": [54, 46],
-    "MHI SCM100ZS-W – [10,0 kW] (multisplit buitenunit)": [54, 49]
+  "Singlesplit - Standaard Uitvoering – [SRC20ZS-W] - 2,0 kW": [45, 42],
+  "Singlesplit - Standaard Uitvoering – [SRC25ZS-W] - 2,5 kW": [46, 42],
+  "Singlesplit - Standaard Uitvoering – [SRC35ZS-W] - 3,5 kW": [50, 45],
+  "Singlesplit - Standaard Uitvoering – [SRC50ZS-W] - 5,0 kW": [52, 45],
+  "Singlesplit - Luxe Uitvoering – [SRC20ZSX-W] - 2,0 kW": [45, 42],
+  "Singlesplit - Luxe Uitvoering – [SRC25ZSX-W] - 2,5 kW": [44, 35],
+  "Singlesplit - Luxe Uitvoering – [SRC35ZSX-W] - 3,5 kW": [48, 38],
+  "Singlesplit - Luxe Uitvoering – [SRC50ZSX-W] - 5,0 kW": [51, 42],
+  "Singlesplit - Luxe Uitvoering – [SRC60ZSX-W] - 6,0 kW": [52, 42],
+  "Singlesplit - Heavy Duty Uitvoering – [SRC63ZR-W] - 6,3 kW": [54, 45],
+  "Singlesplit - Heavy Duty Uitvoering – [SRC71ZR-W] - 7,1 kW": [44, 35],
+  "Singlesplit - Heavy Duty Uitvoering – [SRC80ZR-W] - 8,0 kW": [56, 47],
+  "Multisplit - Voor meerdere binnenunits – [SCM40ZS-W] - 4,0 kW": [49, 44],
+  "Multisplit - Voor meerdere binnenunits – [SCM45ZS-W] - 4,5 kW": [50, 44],
+  "Multisplit - Voor meerdere binnenunits – [SCM50ZS-W] - 5,0 kW": [49, 43],
+  "Multisplit - Voor meerdere binnenunits – [SCM60ZS-W] - 6,0 kW": [50, 43],
+  "Multisplit - Voor meerdere binnenunits – [SCM71ZS-W] - 7,1 kW": [50, 45],
+  "Multisplit - Voor meerdere binnenunits – [SCM80ZS-W] - 8,0 kW": [54, 46],
+  "Multisplit - Voor meerdere binnenunits – [SCM100ZS-W] - 10,0 kW": [54, 49]
   },
   daikin: {
-    "Daikin Comfora RXP20N9 – [2,0 kW]": [47],
-    "Daikin Comfora RXP35N9 – [3,5 kW]": [48],
-    "Daikin Comfora RXP50N8 – [5,0 kW]": [49],
-    "Daikin Comfora 2MXM50 – [5,0 kW]": [50],
-    "Daikin Perfera RXM20A – [2,0 kW]": [47],
-    "Daikin Perfera RXM25A9 – [2,5 kW]": [47],
-    "Daikin Perfera RXM35A9 – [3,5 kW]": [49],
-    "Daikin Perfera RXM42A – [4,2 kW]": [49],
-    "Daikin Perfera RXM50A8 – [5,0 kW]": [49],
-    "Daikin Perfera RXM60A – [6,0 kW]": [49],
-    "Daikin Perfera RXM71A – [7,1 kW]": [48],
-    "Daikin Stylish RXA20A8 – [2,0 kW]": [47],
-    "Daikin Stylish RXA25A8 – [2,5 kW]": [47],
-    "Daikin Stylish RXA35A8 – [3,5 kW]": [49],
-    "Daikin Stylish RXA42B8 – [4,2 kW]": [48],
-    "Daikin Stylish RXA50B8 – [5,0 kW]": [48],
-    "Daikin Emura RXJ20A – [2,0 kW]": [47],
-    "Daikin Emura RXJ25A – [2,5 kW]": [47],
-    "Daikin Emura RXJ35A – [3,5 kW]": [49],
-    "Daikin Emura RXJ42A9 – [4,2 kW]": [48],
-    "Daikin Emura RXJ50A9 – [5,0 kW]": [49],
-    "Daikin Multisplit 2MXM40 – [4,0 kW]": [48],
-    "Daikin Multisplit 2MXM50 – [5,0 kW]": [50],
-    "Daikin Multisplit 2MXM68 – [6,8 kW]": [48],
-    "Daikin Multisplit 3MXM40 – [4,0 kW]": [47],
-     "Daikin Multisplit 3MXM52 – [5,2 kW]": [47],
-     "Daikin Multisplit 3MXM68 – [6,8 kW]": [48],
-     "Daikin Multisplit 4MXM68 – [6,8 kW]": [49],
-     "Daikin Multisplit 4MXM80 – [8,0 kW]": [49],
-     "Daikin Multisplit 5MXM90 – [9,0 kW]": [52]
+  "Singlesplit - Daikin Comfora – [RXP20N9] - 2,0 kW": [47],
+  "Singlesplit - Daikin Comfora – [RXP35N9] - 3,5 kW": [48],
+  "Singlesplit - Daikin Comfora – [RXP50N8] - 5,0 kW": [49],
+  "Singlesplit - Daikin Comfora – [2MXM50] - 5,0 kW": [50],
+  "Singlesplit - Daikin Perfera – [RXM20A] - 2,0 kW": [47],
+  "Singlesplit - Daikin Perfera – [RXM25A9] - 2,5 kW": [47],
+  "Singlesplit - Daikin Perfera – [RXM35A9] - 3,5 kW": [49],
+  "Singlesplit - Daikin Perfera – [RXM42A] - 4,2 kW": [49],
+  "Singlesplit - Daikin Perfera – [RXM50A8] - 5,0 kW": [49],
+  "Singlesplit - Daikin Perfera – [RXM60A] - 6,0 kW": [49],
+  "Singlesplit - Daikin Perfera – [RXM71A] - 7,1 kW": [48],
+  "Singlesplit - Daikin Stylish – [RXA20A8] - 2,0 kW": [47],
+  "Singlesplit - Daikin Stylish – [RXA25A8] - 2,5 kW": [47],
+  "Singlesplit - Daikin Stylish – [RXA35A8] - 3,5 kW": [49],
+  "Singlesplit - Daikin Stylish – [RXA42B8] - 4,2 kW": [48],
+  "Singlesplit - Daikin Stylish – [RXA50B8] - 5,0 kW": [48],
+  "Singlesplit - Daikin Emura – [RXJ20A] - 2,0 kW": [47],
+  "Singlesplit - Daikin Emura – [RXJ25A] - 2,5 kW": [47],
+  "Singlesplit - Daikin Emura – [RXJ35A] - 3,5 kW": [49],
+  "Singlesplit - Daikin Emura – [RXJ42A9] - 4,2 kW": [48],
+  "Singlesplit - Daikin Emura – [RXJ50A9] - 5,0 kW": [49],
+  "Multisplit - Voor meerdere binnenunits – [2MXM40] - 4,0 kW": [48],
+  "Multisplit - Voor meerdere binnenunits – [2MXM50] - 5,0 kW": [50],
+  "Multisplit - Voor meerdere binnenunits – [2MXM68] - 6,8 kW": [48],
+  "Multisplit - Voor meerdere binnenunits – [3MXM40] - 4,0 kW": [47],
+  "Multisplit - Voor meerdere binnenunits – [3MXM52] - 5,2 kW": [47],
+  "Multisplit - Voor meerdere binnenunits – [3MXM68] - 6,8 kW": [48],
+  "Multisplit - Voor meerdere binnenunits – [4MXM68] - 6,8 kW": [49],
+  "Multisplit - Voor meerdere binnenunits – [4MXM80] - 8,0 kW": [49],
+  "Multisplit - Voor meerdere binnenunits – [5MXM90] - 9,0 kW": [52]
   },
   sinclair: {
-    "Sinclair Keyon SOH-09BIK2": [51],
-    "Sinclair Keyon SOH-12BIK2": [52],
-    "Sinclair Keyon SOH-18BIK2": [53],
-    "Sinclair Keyon SOH-24BIK2": [58],
-    "Sinclair Marvin SOH-09BIM": [50],
-    "Sinclair Marvin SOH-12BIM": [52],
-    "Sinclair Marvin SOH-18BIM": [56],
-    "Sinclair Marvin SOH-24BIM": [59],
-    "Sinclair Terrel SOH-09BIT": [50],
-    "Sinclair Terrel SOH-13BIT": [52],
-    "Sinclair Terrel SOH-24BIT2": [59],
-    "Sinclair Multisplit MV-E18BI2": [54],
-    "Sinclair Multisplit MV-E21BI2": [58],
-    "Sinclair Multisplit MV-E24BI2": [58],
-    "Sinclair Multisplit MV-E28BI2": [58],
-    "Sinclair Multisplit MV-E36BI2": [60],
-    "Sinclair Multisplit MV-E42BI2": [60]
+ "Singlesplit - Sinclair Keyon – [SOH-09BIK2] - 2,7 kW": [51],
+  "Singlesplit - Sinclair Keyon – [SOH-12BIK2] - 3,2 kW": [52],
+  "Singlesplit - Sinclair Keyon – [SOH-18BIK2] - 4,6 kW": [53],
+  "Singlesplit - Sinclair Keyon – [SOH-24BIK2] - 6,2 kW": [58],
+  "Singlesplit - Sinclair Marvin – [SOH-09BIM] - 2,7 kW": [50],
+  "Singlesplit - Sinclair Marvin – [SOH-12BIM] - 3,5 kW": [52],
+  "Singlesplit - Sinclair Marvin – [SOH-18BIM] - 5,3 kW": [56],
+  "Singlesplit - Sinclair Marvin – [SOH-24BIM] - 7,1 kW": [59],
+  "Singlesplit - Sinclair Terrel – [SOH-09BIT] - 2,7 kW": [50],
+  "Singlesplit - Sinclair Terrel – [SOH-13BIT] - 3,5 kW": [52],
+  "Singlesplit - Sinclair Terrel – [SOH-24BIT2] - 7,1 kW": [59],
+  "Multisplit - Voor meerdere binnenunits – [MV-E18BI2] - 5,3 kW": [54],
+  "Multisplit - Voor meerdere binnenunits – [MV-E21BI2] - 6,1 kW": [58],
+  "Multisplit - Voor meerdere binnenunits – [MV-E24BI2] - 7,1 kW": [58],
+  "Multisplit - Voor meerdere binnenunits – [MV-E28BI2] - 8,0 kW": [58],
+  "Multisplit - Voor meerdere binnenunits – [MV-E36BI2] - 10,6 kW": [60],
+  "Multisplit - Voor meerdere binnenunits – [MV-E42BI2] - 12,1 kW": [60]
   }
 };
 
@@ -94,6 +94,8 @@ function toonModellen() {
       opt.text = model;
       modelSelect.appendChild(opt);
     }
+    modelSelect.selectedIndex = 0;       // ✅ selecteer automatisch het eerste model
+    toonNachtOptie();                    // ✅ activeer meteen silent modus indien nodig
   } else {
     container.style.display = "none";
     customContainer.style.display = "none";
@@ -134,5 +136,6 @@ function berekenAfstand() {
   const afstand = Math.pow(10, ((db + correctie - norm) / 20));
   document.getElementById('resultaat').innerHTML =
   '👉 Je hebt minimaal <strong>' + afstand.toFixed(1) +
-  ' meter</strong> afstand nodig om binnen de norm van <strong>' + norm + ' dB(A)</strong> te blijven.';
+  ' meter</strong> afstand nodig tot de erfgrens om binnen de norm van <strong>' + norm + ' dB(A)</strong> te blijven.';
 }
+

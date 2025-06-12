@@ -136,6 +136,6 @@ function berekenAfstand() {
   const afstand = Math.pow(10, ((db + correctie - norm) / 20));
   document.getElementById('resultaat').innerHTML =
   '👉 Met dit airco-model is minstens <strong>' + afstand.toFixed(1) +
-  ' meter</strong> afstand tot de erfgrens nodig om te voldoen aan de wettelijke geluidsnorm van <strong>' + norm + ' dB(A)</strong> en geluidsoverlast te voorkomen.';
+  ' meter</strong> afstand tot grens met de buren nodig om te voldoen aan de wettelijke geluidsnorm van <strong>' + norm + ' dB(A)</strong> en geluidsoverlast te voorkomen.';
 }
 

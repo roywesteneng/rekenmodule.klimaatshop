@@ -73,15 +73,16 @@ button {
 .nacht-label {
   display: inline-flex !important;
   align-items: center;
-  gap: 6px;
+  gap: 0.5em;
   font-weight: normal;
   cursor: pointer;
   white-space: nowrap;
-  width: auto !important;
+  width: 100% !important;
 }
 
 .nacht-checkbox {
   margin: 0;
   vertical-align: middle;
+  flex-shrink: 0;
 }
 

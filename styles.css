@@ -87,3 +87,38 @@ button {
   vertical-align: middle;
 }
 
+.faq {
+  max-width: 700px;
+  margin: 4em auto;
+  padding: 0 1em;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  color: #000;
+}
+
+.faq-item {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 1em 0;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000290;
+}
+
+.faq-answer {
+  display: none;
+  padding-bottom: 1em;
+  color: #333;
+}

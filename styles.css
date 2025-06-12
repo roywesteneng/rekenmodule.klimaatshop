@@ -115,10 +115,21 @@ button {
   font-weight: bold;
   cursor: pointer;
   color: #000290;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .faq-answer {
   display: none;
   padding-bottom: 1em;
   color: #333;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.faq-question.active .arrow {
+  transform: rotate(180deg);
 }

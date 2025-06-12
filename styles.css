@@ -73,7 +73,7 @@ button {
 .nacht-label {
   display: inline-flex !important;
   align-items: center;
-  gap: 0.5em;
+  gap: 6px;
   font-weight: normal;
   cursor: pointer;
   white-space: nowrap;

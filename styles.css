@@ -38,6 +38,18 @@ label, select, input, button {
   width: 100%;
   margin-top: 1em;
 }
+
+label {
+  font-weight: bold;
+}
+
+.subtekst {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 0.25em;
+  margin-bottom: 1em;
+}
+
 input, select {
   padding: 10px;
   border-radius: 6px;
@@ -53,13 +65,18 @@ button {
   border-radius: 6px;
   cursor: pointer;
 }
+
 .nacht-label {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
   font-weight: normal;
   cursor: pointer;
+  white-space: nowrap;
+  width: auto !important;
 }
 
 .nacht-checkbox {
+  margin: 0;
   vertical-align: middle;
-  margin-right: 6px;
 }
-

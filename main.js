@@ -144,9 +144,17 @@ document.addEventListener("DOMContentLoaded", function () {
   vragen.forEach(vraag => {
     vraag.addEventListener("click", function () {
       const antwoord = this.nextElementSibling;
-      const open = antwoord.style.display === "block";
+      const isOpen = antwoord.style.display === "block";
+
+      // Sluit alle antwoorden en verwijder actieve pijltjes
       document.querySelectorAll(".faq-answer").forEach(div => div.style.display = "none");
-      antwoord.style.display = open ? "none" : "block";
+      document.querySelectorAll(".faq-question").forEach(btn => btn.classList.remove("active"));
+
+      // Open deze (indien hij nog niet open is)
+      if (!isOpen) {
+        antwoord.style.display = "block";
+        this.classList.add("active");
+      }
     });
   });
 });

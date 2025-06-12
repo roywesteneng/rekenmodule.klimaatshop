@@ -67,7 +67,7 @@ button {
 }
 
 #nachtContainer{
-  max-width: 100%;
+  max-width: 100% !important;
   text-align: left;
 }
 

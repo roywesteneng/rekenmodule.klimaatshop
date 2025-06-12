@@ -139,3 +139,14 @@ function berekenAfstand() {
   ' meter</strong> afstand tot grens met de buren nodig om te voldoen aan de wettelijke geluidsnorm van <strong>' + norm + ' dB(A)</strong> en geluidsoverlast te voorkomen.';
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const vragen = document.querySelectorAll(".faq-question");
+  vragen.forEach(vraag => {
+    vraag.addEventListener("click", function () {
+      const antwoord = this.nextElementSibling;
+      const open = antwoord.style.display === "block";
+      document.querySelectorAll(".faq-answer").forEach(div => div.style.display = "none");
+      antwoord.style.display = open ? "none" : "block";
+    });
+  });
+});

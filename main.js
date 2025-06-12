@@ -135,7 +135,7 @@ function berekenAfstand() {
 
   const afstand = Math.pow(10, ((db + correctie - norm) / 20));
   document.getElementById('resultaat').innerHTML =
-  '👉 Je hebt minimaal <strong>' + afstand.toFixed(1) +
-  ' meter</strong> afstand nodig tot de erfgrens om binnen de norm van <strong>' + norm + ' dB(A)</strong> te blijven.';
+  '👉 Met dit airco-model heb je minstens <strong>' + afstand.toFixed(1) +
+  ' meter</strong> meter afstand tot de erfgrens nodig om geen problemen met regelgeving of geluidsoverlast te krijgen. Dit is nodig om onder de geluidsnorm van <strong>' + norm + ' dB(A)</strong> te blijven.';
 }
 

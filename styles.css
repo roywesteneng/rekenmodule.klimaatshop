@@ -77,7 +77,7 @@ button {
   font-weight: normal;
   cursor: pointer;
   white-space: nowrap;
-  width: 100% !important;
+  width: auto !important;
 }
 
 .nacht-checkbox {

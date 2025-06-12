@@ -66,6 +66,10 @@ button {
   cursor: pointer;
 }
 
+#nachtContainer{
+  max-width: 100%;
+}
+
 .nacht-label {
   display: inline-flex !important;
   align-items: center;

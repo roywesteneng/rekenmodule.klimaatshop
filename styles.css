@@ -66,13 +66,6 @@ button {
   cursor: pointer;
 }
 
-#nachtContainer {
-  display: none;
-  margin-top: 1em;
-  max-width: 100%;
-  word-wrap: break-word;
-}
-
 .nacht-label {
   display: inline-flex !important;
   align-items: center;
@@ -80,7 +73,7 @@ button {
   font-weight: normal;
   cursor: pointer;
   white-space: nowrap;
-  width: 100% !important;
+  width: auto !important;
 }
 
 .nacht-checkbox {
@@ -88,8 +81,3 @@ button {
   vertical-align: middle;
 }
 
-@media (max-width: 480px) {
-  .nacht-label {
-    font-size: 0.95em;
-  }
-}

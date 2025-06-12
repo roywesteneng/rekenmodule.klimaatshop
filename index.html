@@ -8,13 +8,15 @@
 </head>
 <body>
     <header class="page-header">
+        <a href="https://klimaatshop.nl">
         <img src="foto's/Logo-Klimaatshop.nl-Kleur-Wit-Achtergrond-Transparant-Breed-440x200-px-Nieuw2024-PNG.png" alt="Logo Klimaatshop" class="header-logo" />
+        </a>
     </header>
 
   <div id="calculator">
-    <h2>📏Hoe ver moet je airco van de erfgrens staan om binnen de geluidsnorm te blijven?</h2>
+    <h2>📏Hoe ver moet je airco van de erfgrens staan?</h2>
 
-    <label for="merk">1. Wat is het merk van je airco?</label>
+    <label for="merk">Wat is het merk van je airco?</label>
     <select id="merk" onchange="toonModellen()">
       <option value="">-- Kies merk --</option>
       <option value="mhi">Mitsubishi Heavy Industries</option>
@@ -24,29 +26,41 @@
     </select>
 
     <div id="modelContainer" style="display:none;">
-      <label for="model">2a. Kies je model buitenunit</label>
+      <label for="model">Wat is het model van je airco-buitenunit?</label>
+       <p class="subtekst">
+      Let op: het modelnummer van de buitenunit is anders dan dat van de binnenunit.
+      </p>
       <select id="model" onchange="toonNachtOptie()"></select>
         <div id="nachtContainer" style="display: none; margin-top: 1em;">
             <label for="nachtmodus" class="nacht-label">
                 <input type="checkbox" id="nachtmodus" onchange="toonNachtOptie()" class="nacht-checkbox" />
-            Gebruik nachtmodus (indien beschikbaar)
+                Maakt u gebruik van silent modus?
             </label>
+          <p class="subtekst">
+  Silent modus (ook wel nachtmodus) verlaagt het geluidsniveau van de buitenunit in de nacht.  
+  Vink dit aan als je deze functie actief gebruikt.
+</p>
         </div>
     </div>
 
     <div id="customDbContainer" style="display:none;">
-      <label for="customDb">2b. Voer de geluidsdruk in (dB)</label>
+      <label for="customDb">Wat is de geluidsdruk van je airco-buitenunit in dB?</label>
+      <p class="subtekst">
+        Deze waarde staat vaak bij de technische specificaties van je airco, gemeten op 1 meter afstand.
+      </p>
       <input type="number" id="customDb" placeholder="Bijv. 60" />
     </div>
 
-    <label for="plaatsing">3. Waar wordt de buitenunit geplaatst?</label>
+    <label for="plaatsing">Waar wordt de airco-buitenunit geplaatst?</label>
+    <p class="subtekst">Muren en hoeken versterken het geluid. Staat de unit tegen een muur (ook als de voorkant vrij is)? Dan geldt dit niet als vrijstaand.</p>
     <select id="plaatsing">
-      <option value="0">Vrijstaand</option>
+      <option value="0">Vrijstaand (+0 dB)</option>
       <option value="3">Tegen een muur (+3 dB)</option>
       <option value="6">In een hoek of nis (+6 dB)</option>
     </select>
 
-    <label for="gebruik">4. Wanneer gebruik je de airco meestal?</label>
+    <label for="gebruik">Op welke momenten gebruik je de airco voornamelijk?</label>
+    <p class="subtekst">De wettelijke geluidsnorm is 's avonds en 's nachts strenger (40dB) dan overdag (45dB).</p>
     <select id="gebruik">
       <option value="45">Voornamelijk overdag (max 45 dB)</option>
       <option value="40">Voornamelijk 's avonds/'s nachts (max 40 dB)</option>
@@ -58,6 +72,26 @@
     <h3>📊 Resultaat:</h3>
     <p id="resultaat">Vul de gegevens in en klik op 'Bereken'.</p>
   </div>
+  <h2 style="text-align: center; margin-top: 3em; color: #000290;">
+   Bekijk ons fluisterstille airco-assortiment
+</h2>
+
+<div style="display: flex; justify-content: center; gap: 1.5em; flex-wrap: wrap; margin-top: 1.5em; font-weight: bold;">
+  <a href="https://www.klimaatshop.nl/aircos-toebehoren/singlesplit-aircos/?filter%5B%5D=907845" style="text-align: center; text-decoration: none; color: inherit;">
+    <img src="foto's/Mitsubishi-SRK20ZSX-WF-Singlesplit-Airco-2-0kW-+Wifi-Fluisterstil-4.png" alt="Mitsubishi Heavy Industries" style="border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); width: 200px; height: auto;">
+    <p style="margin-top: 0.5em;">Mitsubishi Heavy Industries</p>
+  </a>
+
+  <a href="https://www.klimaatshop.nl/aircos-toebehoren/singlesplit-aircos/?filter%5B%5D=907846" style="text-align: center; text-decoration: none; color: inherit;">
+    <img src="foto's/Daikin-Stylish-FTXA20-Singlesplit-Airco-2,0kW-Wifi-Fluisterstil-7.png" alt="Daikin airco’s" style="border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); width: 200px; height: auto;">
+    <p style="margin-top: 0.5em;">Daikin airco’s</p>
+  </a>
+
+  <a href="https://www.klimaatshop.nl/aircos-toebehoren/singlesplit-aircos/?filter%5B%5D=909674" style="text-align: center; text-decoration: none; color: inherit;">
+    <img src="foto's/Sinclair-Marvin-SIH-09BIMW-Singlesplit-Airco-2-7kW-6.png" alt="Sinclair airco’s" style="border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); width: 200px; height: auto;">
+    <p style="margin-top: 0.5em;">Sinclair airco’s</p>
+  </a>
+</div>
   <script src="main.js"></script>
 </body>
 </html>

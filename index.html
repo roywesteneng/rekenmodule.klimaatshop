@@ -14,7 +14,7 @@
     </header>
 
   <div id="calculator">
-    <h2 style="text-align: center; color: #000;">Hoe ver moet je airco van de grens met de buren staan om geluidsoverlast te voorkomen?</h2>
+    <h2 style="text-align: center; color: #000;">Hoe ver moet je airco-buitenunit van de grens met de buren staan om geluidsoverlast te voorkomen?</h2>
 
     <label for="merk">Wat is het merk van je airco?</label>
     <select id="merk" onchange="toonModellen()">
@@ -31,6 +31,7 @@
       Let op: het modelnummer van de buitenunit is anders dan dat van de binnenunit.
       </p>
       <select id="model" onchange="toonNachtOptie()"></select>
+      <div id="bijpassendeBinnenunit" class="subtekst" style="display: none;"></div>
         <div id="nachtContainer" style="display: none; margin-top: 1em;">
             <label for="nachtmodus" class="nacht-label">
                 <input type="checkbox" id="nachtmodus" onchange="toonNachtOptie()" class="nacht-checkbox" />
@@ -182,6 +183,44 @@ Gebruik altijd de kortste afstand in meters tussen de buitenunit en dat punt. Da
         <p>Fluisterstille airco’s</p>
       </a>
     </div>
+  </div>
+</div>
+   <div class="faq-item">
+  <button class="faq-question">
+    Wat betekenen de codes van airco-units, zoals SRC50ZSX-W?
+    <span class="arrow">▼</span>
+  </button>
+  <div class="faq-answer">
+    <p>
+      De modelcodes van airco-units geven informatie over het type, vermogen en uitvoering. Hieronder zie je een voorbeeld van een <strong>buitenunit</strong> en de bijbehorende <strong>binnenunit</strong>:
+    </p>
+
+    <div style="display: flex; gap: 2em; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 260px;">
+        <h4>Buitenunit: <strong>SRC50ZSX-W</strong></h4>
+        <ul style="margin-top: 0.5em;">
+          <li><strong>SRC</strong>: Buitenunit</li>
+          <li><strong>50</strong>: Vermogen van 5,0 kW</li>
+          <li><strong>ZSX</strong>: Luxe uitvoering</li>
+          <li><strong>W</strong>: Kleur: Wit</li>
+        </ul>
+      </div>
+
+      <div style="flex: 1; min-width: 260px;">
+        <h4>Binnenunit: <strong>SRK50ZSX-WFB</strong></h4>
+        <ul style="margin-top: 0.5em;">
+          <li><strong>SRK</strong>: Binnenunit</li>
+          <li><strong>50</strong>: Vermogen van 5,0 kW</li>
+          <li><strong>ZSX</strong>: Luxe uitvoering</li>
+          <li><strong>WF</strong>: Met wifi-functie</li>
+          <li><strong>B</strong>: Kleur: Zwart (Black))</li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="margin-top: 1em;">
+      Bij andere merken zoals Daikin of Sinclair worden ook vergelijkbare codes gebruikt, maar de betekenis van de letters kan iets verschillen. Controleer bij twijfel de brochure of productspecificaties.
+    </p>
   </div>
 </div>
 </section>
